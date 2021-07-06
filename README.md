@@ -5,4 +5,6 @@
 
 2. State and justify your db schema desing and ETL pileline
 
+![My Star Schema](/star_schema.png)
+
 3. [Optional] Provide example queries and results for song play analysis.
