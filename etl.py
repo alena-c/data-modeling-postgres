@@ -6,6 +6,9 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    '''Creates a dataframe from the song file, cleans the data, 
+    and inserts it into the `artist` and `song` tables. 
+    '''
     # open song file
     df = pd.read_json(filepath, lines=True)
 
@@ -19,6 +22,9 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    '''Creates a dataframe from the log file, cleans the data, 
+    and inserts data into the `users`, `time`, and `songplay` tables. 
+    '''
     # open log file
     df = pd.read_json(filepath, lines=True)
 
@@ -71,7 +77,10 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
-    # get all files matching extension from directory
+    '''Iterates over the file system, looks for json log files 
+    and appends them to a list.
+    '''
+    # get all files matching json extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
         files = glob.glob(os.path.join(root,'*.json'))
@@ -90,6 +99,10 @@ def process_data(cur, conn, filepath, func):
 
 
 def main():
+    '''Creates a connection to the database specifying the user
+     and the password. Then it creates a cursor and creates the
+     ETL pipeline by calling `process_data` functions. 
+    '''
     conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=alena password=12345")
     cur = conn.cursor()
 
