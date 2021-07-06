@@ -1,5 +1,5 @@
 <h1>Data Engineering Nanodegree Program</h1>
-<h3>Project 1</h3>
+<h3>Project 1: Data Modeling with Postgres</h3>
 
 1. The purpose of the database in the context of srartup, Sparkify, and their analytical goals.
 * The database was created for the analysis of the Sparkify music streaming data logs on songs and user activity.
