@@ -9,6 +9,14 @@
 * The following image is our star schema
 ![Star Schema](/star_schema.png)
 * An implemented star schema, consists of four dimension tables (users, songs, artists, time) and a fact table playsongs).
-* Each of the dimension tables has a primary key (i.e., users: user_id, songs: song_id, artists: artist_id, and time: start_time). These dimension tables are referenced by the songplays table with the corresponding foreign keys.
+* Each of the dimension tables has a primary key (i.e., users: user_id, songs: song_id, artists: artist_id, and time: start_time). These dimension tables are referenced by the songplays table with the corresponding foreign keys. 
+* Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details). 
+* Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as it helps to perform easy joins. 
 
 3. [Optional] Provide example queries and results for song play analysis.
+* For example, Sporkify wants to know the proportion of users that pay for their service as apposed to those with free accounts. This could be done by a simple query to the `users` table:
+`SELECT level, 
+        count(*) / (SELECT count(*) FROM users)::float AS prcnt
+ FROM users
+ GROUP BY 1`
+![level percent](/level_prcnt.png)
