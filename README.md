@@ -7,10 +7,11 @@
 
 2. State and justify your db schema desing and ETL pileline
 * The following image is our star schema
-![Star Schema](/star_schema.png)
-* An implemented star schema, consists of four dimension tables (users, songs, artists, time) and a fact table playsongs).
+![Star Schema](images/star_schema.png)
+* An implemented star schema, consists of four dimension tables (users, songs, artists, time) and a fact table playsongs). 
 * Each of the dimension tables has a primary key (i.e., users: user_id, songs: song_id, artists: artist_id, and time: start_time). These dimension tables are referenced by the songplays table with the corresponding foreign keys. 
-* Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details). 
+* Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
+* `users` table, in addition, allows to update the status (`level`) of their account. A new 'upsert' query would do an update on the level if it encounters an already existing `user_id`.
 * Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as it helps to perform easy joins. 
 
 3. [Optional] Provide example queries and results for song play analysis.
@@ -19,4 +20,5 @@
         count(*) / (SELECT count(*) FROM users)::float AS prcnt
  FROM users
  GROUP BY 1`
-![level percent](/level_prcnt.png)
+ 
+![level percent](images/level_prcnt.png)
