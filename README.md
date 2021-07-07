@@ -24,5 +24,5 @@
 ![level percent](images/level_prcnt.png)
 
 <br>
-_________________________
+***
 :bell: **Additional question**
