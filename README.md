@@ -36,10 +36,11 @@
 - The sparkifydb DDL could be found in `'sql_queries.py'`.
 
 <h4>2.4 How To Run the Project</h4>
+1. `'create_tables.py'`
+2. `'etl.py'`
+3. (optional checks) `'test.ipynb'`
 
-* : This describes the steps to run the project 
 ***
-
 <h3>3. [Optional] Provide example queries and results for song play analysis.</h3>
 
 * For example, Sporkify wants to know the proportion of users that pay for their service as apposed to those with free accounts. This could be done by a simple query to the `users` table:
