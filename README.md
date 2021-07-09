@@ -26,8 +26,12 @@
 ___
 
 :bell: **Additional questions for the reviewer**
-1) I have a question regarding the code in template files. Are we supposed to change it completely so it's not considered a plagiarism? Or it is not expected for this project?
-2) What kinds of data checks are you asking for in this projects as an extra to make this project to stand out?
-3) What kind of dashboard are you taking about? Do you simply want an extra ipynb file with visualizations or do you actually want us to integrate some kind of BI tool (like Tableau) into this project?
-4) When you talk about the bulk insert of data, do you mean the direct insert json file -> postgres table thing?
+1) You said I could create an ER diagram. But I did include one into this readme file. Under #2. Is it not good enough because it doesn't have information on what the primary keys are (bold font) and other additional information? 
+2) You wrote "I would suggest using proper headings, emphasis, underline the relevant keywords. Use bullet points, add link URLs and images to make the README better." 
+I have used the links to the images here, and the headers, and the bullet points. I guess I don't understand how this file is supposed to look like to pass your format qualifications. Is it possible to look at some example of a readme file which you think is perfect? 
+
+4) I have a question regarding the code in template files. Are we supposed to change it completely so it's not considered a plagiarism? Or it is not expected for this project?
+5) What kinds of data checks are you asking for in this projects as an extra to make this project to stand out?
+6) What kind of dashboard are you taking about? Do you simply want an extra ipynb file with visualizations or do you actually want us to integrate some kind of BI tool (like Tableau) into this project?
+7) When you talk about the bulk insert of data, do you mean the direct insert json file -> postgres table thing?
 I would really appreciate if you comment on this questions!
