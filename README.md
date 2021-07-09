@@ -33,8 +33,7 @@
     FROM users
     GROUP BY 1;
     ```
- 
-     Which gives the following output:
+     Which produces the following output:
      ![level percent](images/level_prcnt.png)
 <br>
 ___
