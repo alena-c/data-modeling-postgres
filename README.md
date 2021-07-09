@@ -17,7 +17,7 @@
     * Each of the **dimension tables** has a **primary key** -- i.e., `users: `**`user_id`**, `songs: `**`song_id`**, `artists: `**`artist_id`**, and `time: `**`start_time`**. These **dimension tables** are referenced by the `songplays` table with the corresponding _foreign keys_(in italic). 
     * Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
     * `users` table, in addition, allows to update the status (`level`) of their account. A new 'upsert' query would do an update on the level if it encounters an already existing `user_id`.
-    * Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as help to perform easy joins. 
+    >* Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as help to perform easy joins. 
 
 ***
 
