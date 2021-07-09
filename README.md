@@ -2,7 +2,7 @@
 
 <h3>Project 1: Data Modeling with Postgres</h3>
 
-**1. The purpose of the database in the context of srartup, Sparkify, and their analytical goals.**
+<h4>1. The purpose of the database in the context of srartup, Sparkify, and their analytical goals.</h4>
 * The database:
     * was created for the analysis of the Sparkify music streaming data logs on songs and user activity.
     * Since the analytics team is interested in the users' music choises, this database helps to perform such analysis. This relational database is a perfect solution for ease of quering the data as apposed to getting the data from the files stored in JSON logs.
@@ -20,7 +20,7 @@
 
 ***
 
-**3. [Optional] Provide example queries and results for song play analysis.**
+<h4>3. [Optional] Provide example queries and results for song play analysis.</h4>
 * For example, Sporkify wants to know the proportion of users that pay for their service as apposed to those with free accounts. This could be done by a simple query to the `users` table:
 `SELECT level, 
         count(*) / (SELECT count(*) FROM users)::float AS prcnt
