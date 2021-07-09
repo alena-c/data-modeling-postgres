@@ -7,11 +7,11 @@
     * Since the analytics team is interested in the users' music choises, this database helps to perform such analysis. This relational database is a perfect solution for ease of quering the data as apposed to getting the data from the files stored in JSON logs.
 
 ***
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+
 <h4>2. State and justify your db schema desing and ETL pileline</h4>
 * The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
-    * An implemented star schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and a **fact table** `playsongs`), where the `primary keys` are in bold font, `foreign keys` are in italic.
+    ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) An implemented star schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and a **fact table** `playsongs`), where the `primary keys` are in bold font, `foreign keys` are in italic.
     * Each of the dimension tables has a primary key (i.e., users: user_id, songs: song_id, artists: artist_id, and time: start_time). These dimension tables are referenced by the songplays table with the corresponding foreign keys. 
     * Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
     * `users` table, in addition, allows to update the status (`level`) of their account. A new 'upsert' query would do an update on the level if it encounters an already existing `user_id`.
