@@ -48,8 +48,8 @@ CREATE TABLE IF NOT EXISTS time (start_time timestamp PRIMARY KEY,
 
 songplay_table_create = ("""
 CREATE TABLE IF NOT EXISTS songplays (songplay_id SERIAL    PRIMARY KEY,
-                                      start_time  timestamp REFERENCES time (start_time),
-                                      user_id     int       REFERENCES users (user_id),
+                                      start_time  timestamp NOT NULL REFERENCES time (start_time),
+                                      user_id     int       NOT NULL REFERENCES users (user_id),
                                       level       varchar(4),
                                       song_id     varchar   REFERENCES songs (song_id),
                                       artist_id   varchar   REFERENCES artists (artist_id),
