@@ -9,7 +9,7 @@
 
 ***
 
-<h4>2. State and justify your db schema desing and ETL pileline</h4>
+<h3>2. State and justify your db schema desing and ETL pileline</h3>
 * The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
     * An implemented star schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and a **fact table** `playsongs`), where the `primary keys` are in bold font, `foreign keys` are in italic.
