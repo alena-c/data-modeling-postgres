@@ -13,8 +13,7 @@
 
 * The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
-    * The schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and **fact table** `playsongs`), where the `primary keys` are in bold font, `foreign keys` are in italic. 
-    * An additional ER diagram could be created with `'./er_diagram.py'` and it's output could be found in `'images/sparkifydb_erd.png'`
+    * The schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and **fact table** `playsongs`), where the `primary keys` are in bold font, `foreign keys` are in italic. (An additional ER diagram could be created with `'./er_diagram.py'` and it's output could be found in `'images/sparkifydb_erd.png'`)
     * Each of the dimension tables has a primary key (i.e., users: user_id, songs: song_id, artists: artist_id, and time: start_time). These dimension tables are referenced by the songplays table with the corresponding foreign keys. 
     * Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
     * `users` table, in addition, allows to update the status (`level`) of their account. A new 'upsert' query would do an update on the level if it encounters an already existing `user_id`.
