@@ -30,13 +30,7 @@
       GROUP BY 1;`
  
      Which gives the following output:
-     
- level  | prcnt
---------| -------------
-free    | 0.79167
-paid    | 0.20833
- 
-![level percent](images/level_prcnt.png)
+     ![level percent](images/level_prcnt.png)
 <br>
 ___
 
