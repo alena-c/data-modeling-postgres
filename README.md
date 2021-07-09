@@ -1,12 +1,13 @@
 <h1>Data Engineering Nanodegree Program</h1>
 <h3>Project 1: Data Modeling with Postgres</h3>
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+
 <h4>1. The purpose of the database in the context of srartup, Sparkify, and their analytical goals.</h4>
 * The database:
     * was created for the analysis of the Sparkify music streaming data logs on songs and user activity.
     * Since the analytics team is interested in the users' music choises, this database helps to perform such analysis. This relational database is a perfect solution for ease of quering the data as apposed to getting the data from the files stored in JSON logs.
 
 ***
+-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 
 <h4>2. State and justify your db schema desing and ETL pileline</h4>
 * The following image is an ER diagram for the implemented **star schema**:
