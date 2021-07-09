@@ -36,6 +36,7 @@
 - The sparkifydb DDL could be found in `'sql_queries.py'`.
 
 <h4>2.4 How To Run the Project</h4>
+
 1. `'create_tables.py'`
 2. `'etl.py'`
 3. (optional checks) `'test.ipynb'`
