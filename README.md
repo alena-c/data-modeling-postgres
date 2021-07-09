@@ -29,6 +29,11 @@
  FROM users
  GROUP BY 1`
  
+# | level  | prcnt
+--------| -------------
+free    | Content from cell 2
+paid    | Content in the second column
+ 
 ![level percent](images/level_prcnt.png)
 <br>
 ___
