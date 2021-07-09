@@ -27,10 +27,11 @@
 <h4>3. [Optional] Provide example queries and results for song play analysis.</h4>
 
 * For example, Sporkify wants to know the proportion of users that pay for their service as apposed to those with free accounts. This could be done by a simple query to the `users` table:
-    ```SELECT level, 
-        count(*) / (SELECT count(*) FROM users)::float AS prcnt
-      FROM users
-      GROUP BY 1;```
+    ```
+    SELECT level, 
+           count(*) / (SELECT count(*) FROM users)::float AS prcnt
+    FROM users
+    GROUP BY 1;```
  
      Which gives the following output:
      ![level percent](images/level_prcnt.png)
