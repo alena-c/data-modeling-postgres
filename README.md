@@ -29,10 +29,10 @@
  FROM users
  GROUP BY 1`
  
-# | level  | prcnt
+ level  | prcnt
 --------| -------------
-free    | Content from cell 2
-paid    | Content in the second column
+free    | 0.79167
+paid    | 0.20833
  
 ![level percent](images/level_prcnt.png)
 <br>
