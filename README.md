@@ -30,7 +30,10 @@
 <h4>2.3 Project Repository files</h4>
 
 * : This section describes what files are for which purpose in the project 
-* First run  `'create_tables.py'`, which creates the tables (drops them and re-cretes if existed). Then run the `'etl.py'` to populate the tables with data and complete the ETL process. To test the table's content run test.ipynb.
+- Run  `'create_tables.py'`, to connect to the sparkify database, create the tables (or drop them and re-create new ones if existed).
+- Then run `'etl.py'` to populate the tables with data and complete the ETL process. 
+- To test the table's content run `'test.ipynb'`. 
+- The sparkifydb DDL could be found in `'sql_queries.py'`.
 
 <h4>2.4 How To Run the Project</h4>
 
