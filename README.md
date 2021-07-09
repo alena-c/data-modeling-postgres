@@ -1,7 +1,7 @@
 <h1>Data Engineering Nanodegree Program</h1>
-<h3>Project 1: Data Modeling with Postgres</h3>
+<h2>Project 1: Data Modeling with Postgres</h2>
 
-<h4>1. The purpose of the database in the context of srartup, Sparkify, and their analytical goals.</h4>
+<h3>1. The purpose of the database in the context of srartup, Sparkify, and their analytical goals.</h3>
 
 * The database:
     * Was created for the analysis of the Sparkify music streaming data logs on songs and user activity.
@@ -9,9 +9,9 @@
 
 ***
 
-<h4>2. State and justify your db schema desing and ETL pileline</h4>
+<h3>2. State and justify your db schema desing and ETL pileline</h3>
 
- <h5>2.1. Schema.</h5>
+ <h4>2.1. Schema.</h4>
  
 * The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
@@ -21,11 +21,11 @@
     * `users` table, in addition, allows to update the status (`level`) of their account. A new 'upsert' query would do an update on the level if it encounters an already existing `user_id`.
     * Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as help to perform easy joins. 
 
-<h5>2.2 ETL Pipeline.</h5>
+<h4>2.2 ETL Pipeline.</h4>
 
 ***
 
-<h4>3. [Optional] Provide example queries and results for song play analysis.</h4>
+<h3>3. [Optional] Provide example queries and results for song play analysis.</h3>
 
 * For example, Sporkify wants to know the proportion of users that pay for their service as apposed to those with free accounts. This could be done by a simple query to the `users` table:
     ```
