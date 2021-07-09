@@ -27,7 +27,8 @@
     >`SELECT level, 
         count(*) / (SELECT count(*) FROM users)::float AS prcnt
       FROM users
-      GROUP BY 1`
+      GROUP BY 1;`
+ 
  Which gives the following output:
  level  | prcnt
 --------| -------------
