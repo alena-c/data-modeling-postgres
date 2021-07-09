@@ -20,17 +20,17 @@
     * `users` table, in addition, allows to update the status (`level`) of their account. A new 'upsert' query would do an update on the level if it encounters an already existing `user_id`.
     * Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as help to perform easy joins. 
 
-**2.2 ETL**
+2.2 ETL
 
 ***
 
 <h4>3. [Optional] Provide example queries and results for song play analysis.</h4>
 
 * For example, Sporkify wants to know the proportion of users that pay for their service as apposed to those with free accounts. This could be done by a simple query to the `users` table:
-    >`SELECT level, 
+    >```SELECT level, 
         count(*) / (SELECT count(*) FROM users)::float AS prcnt
       FROM users
-      GROUP BY 1;`
+      GROUP BY 1;```
  
      Which gives the following output:
      ![level percent](images/level_prcnt.png)
