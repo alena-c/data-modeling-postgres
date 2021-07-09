@@ -25,4 +25,9 @@
 <br>
 ___
 
-:bell: **Additional question**
+:bell: **Additional questions for the reviewer**
+1) I have a question regarding the code in template files. Are we supposed to change it completely so it's not considered a plagiarism? Or it is not expected for this project?
+2) What kinds of data checks are you asking for in this projects as an extra to make this project to stand out?
+3) What kind of dashboard are you taking about? Do you simply want an extra ipynb file with visualizations or do you actually want us to integrate some kind of BI tool (like Tableau) into this project?
+4) When you talk about the bulk insert of data, do you mean the direct insert json file -> postgres table thing?
+I would really appreciate if you comment on this questions!
