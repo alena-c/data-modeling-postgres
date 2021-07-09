@@ -1,6 +1,6 @@
 <h1>Data Engineering Nanodegree Program</h1>
 <h2>Project 1: Data Modeling with Postgres</h2>
-
+                                         ***
 <h3>1. The purpose of the database in the context of srartup, Sparkify, and their analytical goals.</h3>
 
 * The database:
