@@ -10,7 +10,7 @@
 ***
 
 2. **State and justify your db schema desing and ETL pileline**
-* The following image is our star schema
+* The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
     * An implemented star schema, consists of four dimension tables (users, songs, artists, time) and a fact table playsongs). 
     * Each of the dimension tables has a primary key (i.e., users: user_id, songs: song_id, artists: artist_id, and time: start_time). These dimension tables are referenced by the songplays table with the corresponding foreign keys. 
