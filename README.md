@@ -29,7 +29,7 @@
       FROM users
       GROUP BY 1;`
  
- Which gives the following output:
+     Which gives the following output:
  level  | prcnt
 --------| -------------
 free    | 0.79167
