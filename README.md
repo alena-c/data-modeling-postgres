@@ -23,12 +23,17 @@
 > Database design: Describe the schema, you should lay down what are the tables (fact and dimension tables) clearly. Mention, the purpose for each of them.
 
 <h4>2.2 ETL Pipeline.</h4>
+
 * agherq
 >ETL Process: This section describes the processing of the logs and creating different tables so that analytical queries can be run on them. It also describes, which directories has what kind of data and how are you extracting and transforming it. 
 
-Project Repository files: This section describes what files are for which purpose in the project 
+<h4>2.3 Project Repository files</h4>
 
-How To Run the Project: This describes the steps to run the project 
+* : This section describes what files are for which purpose in the project 
+
+<h4>2.4 How To Run the Project</h4>
+
+* : This describes the steps to run the project 
 ***
 
 <h3>3. [Optional] Provide example queries and results for song play analysis.</h3>
