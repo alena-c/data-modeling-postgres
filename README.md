@@ -7,8 +7,7 @@
     * Since the analytics team is interested in the users' music choises, this database helps to perform such analysis. This relational database is a perfect solution for ease of quering the data as apposed to getting the data from the files stored in JSON logs.
 
 ***
--![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 <h4>2. State and justify your db schema desing and ETL pileline</h4>
 * The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
