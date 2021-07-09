@@ -11,6 +11,7 @@
 <h4>2. State and justify your db schema desing and ETL pileline</h4>
 * The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
+
     ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) An implemented star schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and a **fact table** `playsongs`), where the `primary keys` are in bold font, `foreign keys` are in italic.
     * Each of the dimension tables has a primary key (i.e., users: user_id, songs: song_id, artists: artist_id, and time: start_time). These dimension tables are referenced by the songplays table with the corresponding foreign keys. 
     * Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
