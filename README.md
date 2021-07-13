@@ -25,8 +25,6 @@
     * In addition to it's **primary key** and the _foreign keys_ mentioned above, the fact table `songplays` also records the user's subscription level, location, session_id, and the user_agent information of user's system on which they played the song.
     * Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as help to perform easy joins. 
 
-> Database design: Describe the schema, you should lay down what are the tables (fact and dimension tables) clearly. Mention, the purpose for each of them.
-
 <h4>2.2 ETL Pipeline.</h4>
 
 * agherq
