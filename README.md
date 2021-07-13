@@ -10,7 +10,7 @@
 
 <h3>2. State and justify your db schema desing and ETL pileline</h3>
 
- <h4>2.1. Schema design.</h4>
+ <h4><a>id=2.1. Schema design</a>.</h4>
  
 * The following image is an ER diagram for the implemented **star schema**:
 ![Star Schema](images/star_schema.png)
