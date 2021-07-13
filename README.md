@@ -74,6 +74,10 @@ or
    
    ![images/songplays_time_query.png](images/songplays_time_query.png)
 
+|location | count |
+|--|--|
+Atlanta-Sandy Springs-Roswell, GA | 146
+
 ___
 
 :bell: **Additional questions for the reviewer**
