@@ -19,6 +19,9 @@
     * Additionally, each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
     * Specifically, the dimension tables have the following purposes:
       - `users` table keeps all information on the Sparkify users, including their names, gender and the level of subscription they have (free or paid). In addition, it is allowed to update that status (`level`). A new 'upsert' query would make an update on the level if it encounters an already existing `user_id`.
+      - `artists` table keeps all information separately about the artists, including their name, location, and location's coordinates (latitude and longitude).
+      - `songs` table hold specific information related to a song played, i.e., title of the song, name of the artist for that song, song's production year and duration.
+      - `time` table holds all detailed information regarding the time stamp for the played song. All this information was extracted from the timestamp directly using the pandas datetime function, such as hour, day, week, month, year (as integers) and the day of the week the song was played.
     * Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as help to perform easy joins. 
 
 > Database design: Describe the schema, you should lay down what are the tables (fact and dimension tables) clearly. Mention, the purpose for each of them.
