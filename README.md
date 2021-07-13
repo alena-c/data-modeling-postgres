@@ -70,4 +70,4 @@ I have used the links to the images here, and the headers, and the bullet points
 5) What kind of dashboard are you taking about? Do you simply want an extra ipynb file with visualizations or do you actually want us to integrate some kind of BI tool (like Tableau) into this project? Would it be possible to get a link with examples please?
 6) When you talk about the bulk insert of data, do you mean the direct insert from json file -> to postgres tables? Or do you mean converting JSON to CSV first and then use \copy? I've studied the link you shared with me earlier, but i'm still a little bit confused which method I should use here.
 
-I would really appreciate if you comment on this questions! Thank you so much! :thank you!:
+I would really appreciate if you comment on this questions! Thank you so much! 🙏🏻
