@@ -59,13 +59,9 @@
      ![level percent](images/level_prcnt.png)
 <br>
 ___
-<br>
-<div class="alert alert-warning"
-  <strong>NOTE:</strong> Additional questions for the reviewer.
-</div>
 
-<br>
 :bell: **Additional questions for the reviewer**
+
 1) You said I could create an ER diagram. But I did include one into this readme file. Under #2. Is it not good enough because it doesn't have information on what the primary keys are (bold font) and other additional information? 
 2) You wrote "I would suggest using proper headings, emphasis, underline the relevant keywords. Use bullet points, add link URLs and images to make the README better." 
 I have used the links to the images here, and the headers, and the bullet points. I guess I don't quite understand how this file is supposed to look like to pass your proper format standards. Is it possible to look at some example of a readme file which you think is perfect? 
