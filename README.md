@@ -59,6 +59,7 @@
      ![images/level_prcnt.png](images/level_prcnt.png)
 <br>
 or
+
 * Sporkify wants to know the top 20 locations their most loyal users spent their weekends in Novermer 2018. This could be simply answered by joining songplays and time tables with the following query:
    ```
    SELECT location, count(*) 
