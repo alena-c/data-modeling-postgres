@@ -72,7 +72,8 @@ or
    WHERE t.weekday in ('Saturday', 'Sunday') AND
          s.start_time BETWEEN '2018-11-01' AND '2018-12-01' 
    GROUP BY location
-   ORDER BY count(*) DESC;
+   ORDER BY count(*) DESC
+   LIMIT 10;
    ```
    Which gives the following output:
 
