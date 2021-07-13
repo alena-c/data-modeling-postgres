@@ -60,7 +60,7 @@
      ![images/level_prcnt.png](images/level_prcnt.png)
 or
 
-* Sporkify wants to know the top 20 locations their most loyal users spent their weekends in Novermer 2018. This could be simply answered by joining songplays and time tables with the following query:
+* Sporkify wants to know the top 10 locations their most loyal users spent their weekends in Novermer 2018. This could be simply answered by joining songplays and time tables with the following query:
    ```
    SELECT location, count(*) 
    FROM songplays s
@@ -71,12 +71,21 @@ or
    ORDER BY count(*) DESC;
    ```
    Which gives the following output:
-   
-   ![images/songplays_time_query.png](images/songplays_time_query.png)
 
-|location | count |
-|--|--|
-Atlanta-Sandy Springs-Roswell, GA | 146
+|n|location | count |
+|--|--|--|
+1|Atlanta-Sandy Springs-Roswell, GA | 146
+2|Tampa-St. Petersburg-Clearwater, FL |122
+3|San Francisco-Oakland-Hayward, CA | 117
+4|Winston-Salem, NC | 97
+5|Portland-South Portland, ME | 90
+6|Waterloo-Cedar Falls, IA | 90
+7|Sacramento--Roseville--Arden-Arcade, CA | 57
+8|Marinette, WI-MI | 31
+9|Chicago-Naperville-Elgin, IL-IN-WI | 30
+10|San Jose-Sunnyvale-Santa Clara, CA | 24
+
+
 
 ___
 
