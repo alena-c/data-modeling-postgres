@@ -7,7 +7,7 @@ from sql_queries import *
 
 def process_song_file(cur, filepath):
     '''Creates a dataframe from the song file, cleans the data, 
-    and inserts it into the `artist` and `song` tables. 
+    and inserts it into the `artists` and `songs` tables. 
     '''
     # open song file
     df = pd.read_json(filepath, lines=True)
@@ -23,7 +23,7 @@ def process_song_file(cur, filepath):
 
 def process_log_file(cur, filepath):
     '''Creates a dataframe from the log file, cleans the data, 
-    and inserts data into the `users`, `time`, and `songplay` tables. 
+    and inserts data into the `users`, `time`, and `songplays` tables. 
     '''
     # open log file
     df = pd.read_json(filepath, lines=True)
