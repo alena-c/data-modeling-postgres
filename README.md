@@ -58,6 +58,11 @@
      Which produces the following output:
      
      ![images/level_prcnt.png](images/level_prcnt.png)
+|_|level |prcnt |
+|--|--|--|
+1|free | 0.79167
+2|paid | 0.20833
+
 or
 
 * Sporkify wants to know the top 10 locations their most loyal users spent their weekends in Novermer 2018. This could be simply answered by joining songplays and time tables with the following query:
@@ -72,7 +77,7 @@ or
    ```
    Which gives the following output:
 
-|n|location | count |
+|_|location | count |
 |--|--|--|
 1|Atlanta-Sandy Springs-Roswell, GA | 146
 2|Tampa-St. Petersburg-Clearwater, FL |122
