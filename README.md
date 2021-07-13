@@ -27,7 +27,10 @@
 
 <h4>2.2 ETL Pipeline.</h4>
 
-* agherq
+* Initially, the song data (`'data/song_data'`) is processed by iterating the directory's json files and making insertions about each new song into the `artists` and `songs` tables. This happens in etl.py process_song_file() function.
+* The log data (`'data/log_data'`) is processed by iterating the directory's json files and making  the insertions of each log into the `users`, `time` tables, and, partially, into the `songplays` table (etl.py process_log_file() function).
+* Both data directories are extracting the data by creating, and populating Pandas dataframes, after what the insertions are made into the relevant tables by executing  cur.execute(`TABLE_NAME`_table_insert, row) command.
+
 >ETL Process: This section describes the processing of the logs and creating different tables so that analytical queries can be run on them. It also describes, which directories has what kind of data and how are you extracting and transforming it. 
 
 <h4>2.3 Project Repository files</h4>
