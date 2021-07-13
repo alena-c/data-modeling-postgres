@@ -58,6 +58,20 @@
      Which produces the following output:
      ![images/level_prcnt.png](images/level_prcnt.png)
 <br>
+or
+* Sporkify wants to know the top 20 locations their most loyal users spent their weekends in Novermer 2018. This could be simply answered by joining songplays and time tables with the following query:
+   ```
+   SELECT location, count(*) 
+   FROM songplays s
+   INNER JOIN time t ON t.start_time = s.start_time
+   WHERE t.weekday in ('Saturday', 'Sunday') AND
+         s.start_time BETWEEN '2018-11-01' AND '2018-12-01' 
+   GROUP BY location
+   ORDER BY count(*) DESC;
+   ```
+   Which gives the following output:
+   ![images/songplays_time_query.png](images/songplays_time_query.png.png)
+
 ___
 
 :bell: **Additional questions for the reviewer**
