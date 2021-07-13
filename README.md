@@ -56,8 +56,7 @@
     GROUP BY 1;
     ```
      Which produces the following output:
-     
-     ![images/level_prcnt.png](images/level_prcnt.png)
+       
 |_|level |prcnt |
 |--|--|--|
 1|free | 0.79167
