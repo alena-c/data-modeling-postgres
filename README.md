@@ -16,8 +16,9 @@
 ![Star Schema](images/star_schema.png)
     * The schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and **fact table** `playsongs`. (An additional ER diagram could be created with `'./er_diagram.py'` and it's output could be found in `'images/sparkifydb_erd.png'`)
     * Each of the **dimension tables** has a **primary key** -- i.e., `users: `**`user_id`**, `songs: `**`song_id`**, `artists: `**`artist_id`**, and `time: `**`start_time`**. These **dimension tables** are referenced by the `songplays` table with the corresponding _foreign keys_(in italic). 
-    * Each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
-    * `users` table, in addition, allows to update the status (`level`) of their account. A new 'upsert' query would do an update on the level if it encounters an already existing `user_id`.
+    * Additionally, each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
+    * Specifically, the dimension tables have the following purposes:
+      - `users` table keeps all information on the Sparkify users, including their names, gender and the level of subscription they have (free or paid). In addition, it is allowed to update that status (`level`). A new 'upsert' query would make an update on the level if it encounters an already existing `user_id`.
     * Such desing is perfect for the business problem. The denormalized tables allow for easy quering and fast aggregation of all needed information as well as help to perform easy joins. 
 
 > Database design: Describe the schema, you should lay down what are the tables (fact and dimension tables) clearly. Mention, the purpose for each of them.
