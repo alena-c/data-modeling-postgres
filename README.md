@@ -71,6 +71,7 @@ or
    ORDER BY count(*) DESC;
    ```
    Which gives the following output:
+   
    ![images/songplays_time_query.png](images/songplays_time_query.png)
 
 ___
