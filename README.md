@@ -13,8 +13,8 @@
  <h4>2.1 Schema design</h4>
  
 * The following image is an ER diagram for the implemented **star schema**:
-![Star Schema](images/star_schema.png)
-    * The schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and **fact table** `playsongs`. (An additional ER diagram could be created with `'./er_diagram.py'` and it's output could be found in [images/sparkifydb_erd.png](images/sparkifydb_erd.png))
+![Star Schema](./images/star_schema.png)
+    * The schema, consists of four **dimension tables** (`users`, `songs`, `artists`, `time`) and **fact table** `playsongs`. (An additional ER diagram could be created with `'./er_diagram.py'` and it's output could be found in [images/sparkifydb_erd.png](./images/sparkifydb_erd.png))
     * Each of the **dimension tables** has a **primary key** -- i.e., `users: `**`user_id`**, `songs: `**`song_id`**, `artists: `**`artist_id`**, and `time: `**`start_time`**. These **dimension tables** are referenced by the `songplays` table with the corresponding _foreign keys_(in italic). 
     * Additionally, each of the dimension table allows for a simple answer of the Sparkify's needs regarding the users and songs (and if needed artists and time details).
     * Specifically, the dimension tables have the following purposes:
@@ -27,23 +27,23 @@
 
 <h4>2.2 ETL Pipeline.</h4>
 
-* Initially, the song data ([data/song_data](data/song_data)) is processed by iterating the directory's json files and making insertions about each new song into the `artists` and `songs` tables. This happens in etl.py process_song_file() function.
-* The log data ([data/log_data](data/log_data)) is processed by iterating the directory's json files and making  the insertions of each log into the `users`, `time` tables, and, partially, into the `songplays` table (etl.py process_log_file() function).
+* Initially, the song data ([data/song_data](./data/song_data)) is processed by iterating the directory's json files and making insertions about each new song into the `artists` and `songs` tables. This happens in etl.py process_song_file() function.
+* The log data ([data/log_data](./data/log_data)) is processed by iterating the directory's json files and making  the insertions of each log into the `users`, `time` tables, and, partially, into the `songplays` table (etl.py process_log_file() function).
 * Both data directories are extracting the data by creating, and populating Pandas dataframes, after what the insertions are made into the relevant tables by executing  cur.execute(`TABLE_NAME`_table_insert, row) command.
 
 <h4>2.3 Project Repository files</h4>
 
 * : This section describes what files are for which purpose in the project 
-- Run  [create_tables.py](create_tables.py), to connect to the sparkify database, create the tables (or drop them and re-create new ones if existed).
-- Then run [etl.py](etl.py) to populate the tables with data and complete the ETL process. 
-- To test the table's content run [test.ipynb](test.ipynb). 
-- The sparkifydb DDL could be found in [sql_queries.py](sql_queries.py).
+- Run  [create_tables.py](./create_tables.py), to connect to the sparkify database, create the tables (or drop them and re-create new ones if existed).
+- Then run [etl.py](./etl.py) to populate the tables with data and complete the ETL process. 
+- To test the table's content run [test.ipynb](./test.ipynb). 
+- The sparkifydb DDL could be found in [sql_queries.py](./sql_queries.py).
 
 <h4>2.4 How To Run the Project</h4>
 
-1. [create_tables.py](create_tables.py)
-2. [etl.py](etl.py)
-3. (optional checks) [sql_queries.py](sql_queries.py)
+1. create_tables.py
+2. etl.py
+3. (optional checks) sql_queries.py
 
 ***
 <h3>3. [Optional] Provide example queries and results for song play analysis.</h3>
